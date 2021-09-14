@@ -2,3 +2,11 @@
     height:75px;
     width:100px;
 }
+
+.column {
+    float: left;
+    padding: 2px;
+  }
+
+ 
+
