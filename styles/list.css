@@ -10,3 +10,35 @@
     height:200px;
     width:250px;
 }
+.main-container{
+  background-color:  #e0e0e0;
+}
+.header{
+  background-color: rosybrown;
+  width: 100%;
+}
+  #list-container {
+    position: relative;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+  }
+  #map {
+    height: 82vh;
+    margin-top: 2%;
+  }
+
+  .hotel-card{
+    background-color: rgb(132,136,139);
+    margin: 2% 2% 0% 2%;
+    width: 40%;
+  }
+  .Footer{
+    background-color: rosybrown;
+    width: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }

@@ -5,78 +5,90 @@
         <title>Detail</title>
     </head>
     <body>
-        <div>
-            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a> 
-            <a href="login.html">Login</a>    
-         </div>
-         <div>
-             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-             alt="Radisson Blu Hotel" style="width:500px; height: 500px;">
-         </div>
-         <div id="booking-form">
-          <form action="payment.html" method="get" autocomplete="off">
-              <div class="outer">
-                  <label for="adult">Adults:</label>
-                  <input class="inner" type="number" name="adult" id="adult" value="1" min="1" oninput="updatePrice()" required/>
-              </div>
-
-              <div class="outer">
-                  <label for="name">Name:</label>
-                  <input class="inner" type="text" name="name" id="name" required/>
-              </div>
-
-              <div class="outer">
-                  <label for="fromDate">From Date:</label>
-                  <input class="inner" type="date" name="fromDate" id="fromDate" oninput="updatePrice()" required/>
-              </div>
-
-              <div class="outer">
-                  <label for="toDate">To Date:</label>
-                  <input class="inner" type="date" name="toDate" id="toDate" oninput="updatePrice()" required/>
-              </div>
-
-              <div class="outer">
-                  <label for="price">Total:</label>
-                  <input class="inner" type="text" name="price" id="price" readonly/>
-                  <input class="inner" type="hidden" id="id" name="id">
-              </div>
-
-              <div>
-                  <input type="submit" class="btn btn-outline-success" value="Book Now" id="book-now"/>
-              </div>
-          </form>
-      </div>
-         <h3>Radisson Blu Hotel</h3>
-         <p>Rating</p>
-         <p>5 star</p>
-         <p>AMENITIES</p>
-         <ul>
-            <li>Room Service</li>
-            <li>Restaurants</li>
-            <li>Business Center</li>
-            <li>Fitness Center</li>
-            <li>Pool</li>
-          </ul>
-          <h4>Description</h4>
-          <p>
-            Radisson Hotels is an international hotel chain 
-            headquartered in the United States. A division of the Radisson Hotel Group, 
-            it operates the brands Radisson Blu, Radisson Red, Radisson Collection, 
-            Country Inn & Suites, and Park Inn by Radisson among others.
-          </p>
-          <div class="row">
-            <div class="column">
-                <img src="assests/images/facebook.png" style="width: 22px; height: 20px;">
-            </div>
-            <div class="column">
-              <img src="assests/images/instagram.png" style="width: 22px; height: 20px;">
+        <div class="main-container">
+            <div class="header">
+                <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a> 
+                <a href="login.html">Login</a>    
+             </div>
+             <div class="hotel">
+                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                 alt="Radisson Blu Hotel" style="width:500px; height: 500px;">
+             </div>
+             <div id="booking-form">
+              <form action="payment.html" method="get" autocomplete="off">
+                  <div class="outer">
+                      <label for="adult">Adults:</label>
+                      <input class="inner" type="number" name="adult" id="adult" value="1" min="1" oninput="updatePrice()" required/>
+                  </div>
+    
+                  <div class="outer">
+                      <label for="name">Name:</label>
+                      <input class="inner" type="text" name="name" id="name" required/>
+                  </div>
+    
+                  <div class="outer">
+                      <label for="fromDate">From Date:</label>
+                      <input class="inner" type="date" name="fromDate" id="fromDate" oninput="updatePrice()" required/>
+                  </div>
+    
+                  <div class="outer">
+                      <label for="toDate">To Date:</label>
+                      <input class="inner" type="date" name="toDate" id="toDate" oninput="updatePrice()" required/>
+                  </div>
+    
+                  <div class="outer">
+                      <label for="price">Total:</label>
+                      <input class="inner" type="text" name="price" id="price" readonly/>
+                      <input class="inner" type="hidden" id="id" name="id">
+                  </div>
+    
+                  <div>
+                      <input type="submit" class="btn btn-outline-success" value="Book Now" id="book-now"/>
+                  </div>
+              </form>
           </div>
-          <div class="column">
-              <img src="assests/images/twitter.png" style="width: 22px; height: 20px;">
-          </div>
-        </div>
-        <div style="clear: both;">
-          Ⓒ2020 ROOM SEARCH PVT LTD
+             <div class="description">
+                <h3>Radisson Blu Hotel</h3>
+                <br>
+                <p>RATING</p>
+                <br>
+                <p>5 star</p>
+                <br>
+                <p>AMENITIES</p>
+                <br>
+                <ul id="list">
+                   <li>Room Service</li>
+                   <li>Restaurants</li>
+                   <li>Business Center</li>
+                   <li>Fitness Center</li>
+                   <li>Pool</li>
+                 </ul>
+                 <br>
+                 <h4>Description</h4>
+                 <br>
+                 <p>
+                   Radisson Hotels is an international hotel chain 
+                   headquartered in the United States. A division of the Radisson Hotel Group, 
+                   it operates the brands Radisson Blu, Radisson Red, Radisson Collection, 
+                   Country Inn & Suites, and Park Inn by Radisson among others.
+                 </p>
+             </div>
+              <div class="Footer">
+                <a href="">Contact Us</a>
+                <div>
+                    <div class="column">
+                        <img src="assests/images/facebook.png" style="width: 22px; height: 20px;">
+                    </div>
+                    <div class="column">
+                      <img src="assests/images/instagram.png" style="width: 22px; height: 20px;">
+                  </div>
+                  <div class="column">
+                      <img src="assests/images/twitter.png" style="width: 22px; height: 20px;">
+                  </div>
+                  <div style="clear: both;">Ⓒ2020 ROOM SEARCH PVT LTD</div>
+                </div>
+              </div>
+
         </div>
     </body>
 </html>
