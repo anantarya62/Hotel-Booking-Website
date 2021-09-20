@@ -1,6 +1,8 @@
 .logo{
-    height:60px;
-    width:60px;
+  height:60px;
+  width:60px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .column {
@@ -9,22 +11,41 @@
   }
 
  .main-container{
+   margin-top:2%;
     background-color:  #e0e0e0;
   }
-  * {
-    margin: 0;
-    padding: 0;
+  *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Ubuntu', sans-serif;
   }
+
   .header{   
-  background-color: rosybrown;
-  width: 100%;
+    display: flex;
+    background-color: rosybrown;
+    position:fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    justify-content:space-between;
+  }
+  a{
+    text-decoration: none;
+    color: black;
   }
   .Footer{
+    display: flex;
     background-color: rosybrown;
+    bottom: 0%;
     width: 100%;
+    height:50px;
+    position:fixed;
+    justify-content:space-between;
+    align-items: center;
   }
   .hotel{
       margin: 2% 4% 0% 4%;
+      padding-top: 5%;
   }
   #booking-form{
       margin: 0% 4% 1% 4%;
@@ -34,4 +55,19 @@
   }
   #list{
     margin-left: 3%;
+}
+.copy-right{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.contact{
+  float:left;
+  margin: auto 0 auto 1%;
+}
+#login{
+  float: right;
+  align-content: center;
+  padding: 1.5%;
+  background-color: rosybrown;
 }

@@ -3,60 +3,64 @@
     <head>
         <link rel="stylesheet" href="styles/index.css">
         <title>Index</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="main-container">
           <div class="header">
-            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a> 
-              <a href="login.html">Login</a>    
+            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
+            <div id="login">
+              <a  href="login.html">Login</a>
+            </div>       
            </div> 
-           <div id="banner">
-            <div id="search-bar">
-              <form>
-                <input type="text" placeholder="City">
-              </form>
-            </div>
-           </div>       
-          <div class="city-cards">
-              <div class="city-card-and-name-inner">
-                <a href="list.html">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" 
-                alt="Delhi"  class="city-image"></a>
+           <div class="content">
+            <div id="banner">
+              <div id="search-bar">
+                <form>
+                  <input id="search-input" type="text" placeholder="City">
+                </form>
               </div>
-              <div class="city-card-and-name-inner">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" 
-                alt="Goa"  class="city-image">
+             </div>       
+            <div class="city-cards">
+                <div class="city-card-and-name-inner">
+                  <a href="list.html">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" 
+                  alt="Delhi"  class="city-image"></a>
+                </div>
+                <div class="city-card-and-name-inner">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" 
+                  alt="Goa"  class="city-image">
+                </div>
+                <div class="city-card-and-name-inner">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" 
+                  alt="Hydrabad"  class="city-image">
+                </div>
+                <div class="city-card-and-name-inner">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" 
+                    alt="Calcutta"  class="city-image">
               </div>
-              <div class="city-card-and-name-inner">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" 
-                alt="Hydrabad"  class="city-image">
-              </div>
-              <div class="city-card-and-name-inner">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" 
-                  alt="Calcutta"  class="city-image">
-            </div>
-            </div>
-            <div style="clear: both;">
-              <a href="">View more >></a>
-            </div>
-             
+              </div>    
+           </div>
+           <div class="center" style="clear: both;">
+            View more >>
+          </div> 
             <div class="Footer">
-                <a href="">Contact Us</a>
+              <div class="contact"><a href="contact.html">Contact Us</a></div>
+              <div class="copy-right">
+                Ⓒ2020 ROOM SEARCH PVT LTD
+              </div> 
+                
                 <div class="row">
                     <div class="column">
-                        <img src="assests/images/facebook.png" style="width: 22px; height: 20px;">
+                        <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" style="width: 22px; height: 20px;"></a>
                     </div>
                     <div class="column">
-                      <img src="assests/images/instagram.png" style="width: 22px; height: 20px;">
+                     <a href="https://www.instagram.com/"><img src="assests/images/instagram.png" style="width: 22px; height: 20px;"></a>
                   </div>
                   <div class="column">
-                      <img src="assests/images/twitter.png" style="width: 22px; height: 20px;">
+                     <a href="https://twitter.com/"><img src="assests/images/twitter.png" style="width: 22px; height: 20px;"></a>
                   </div>
-                </div>
-                <div style="clear: both;">
-                  Ⓒ2020 ROOM SEARCH PVT LTD
-                </div>
-                
+                </div> 
             </div>
         </div>
     </body>

@@ -3,45 +3,48 @@
     <head>
         <link rel="stylesheet" href="styles/list.css">
         <title>List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="main-container">
             <div class="header">
-                <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>  
-                <a href="login.html">Login</a>    
-             </div>
-            
-            <div id="list-container">
-                <ul class="nav nav-pills" id="pills-tab">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#list-view">List View</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#map-view">Map View</a>
-                    </li>
-                </ul>
-                    <div id="list-view" class="tab-pane fade show active">
-                        <div id="hotel-list"></div>
+                <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
+                <div id="login">
+                  <a  href="login.html">Login</a>
+                </div>       
+               </div> 
+               <div >
+                    
+                <ul  class="grid" style="list-style: none;">
+                    <br>
+                    <div class="item_grid">
+                        <li style="text-align: right; padding-right: 6%; "><a href="#list-view" style=" text-decoration: none;color: black;"><b>List View</b></a> </li>
                     </div>
+                    <div class="item_grid2">
+                        <li style="text-align: left;"><a href="#map-view" style=" text-decoration: none;color: black;"><b>Map View</b></a> </li>
+                    </div>                      
+                </ul>
             </div>
+                <div id="list-view" class="tab-pane fade">
+                </div>
             <div class="hotel-list">
                 <div class="hotel-card" onclick="location.href='detail.html';">
                     <img class="hotel-image-small" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-                    <p>Radisson Blu Hotel</p>
-                    <p>5 Star</p>
-                    <p>New Delhi</p>
+                    <h3>Radisson Blu Hotel</h3><br>
+                    <div>5 Star</div><br>
+                    <div>New Delhi</div>
                 </div>
                 <div class="hotel-card">
                     <img class="hotel-image-small" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
-                    <p>The Lalit New Delh</p>
-                    <p>4.5 Star</p>
-                    <p>New Delhi</p>
+                    <h3>The Lalit New Delhi</h3><br>
+                    <div>4.5 Star</div><br>
+                    <div>New Delhi</div>
                 </div>
                 <div class="hotel-card">
                     <img class="hotel-image-small" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
-                    <p>Taj Palace</p>
-                    <p>4.0 Star</p>
-                    <p>New Delhi</p>
+                    <h3>Taj Palace</h3><br>
+                    <div>4.0 Star</div><br>
+                    <div>New Delhi</div>
                 </div>
             </div>
             <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
@@ -49,25 +52,24 @@
             <br>
             <div id="map-view" class="tab-pane fade">
             </div>
-            
             <div class="Footer">
-                <a href="">Contact Us</a>
-                <div>
-                    <div class="column">
-                        <img src="assests/images/facebook.png" style="width: 22px; height: 20px;">
+                <div class="contact"><a href="contact.html">Contact Us</a></div>
+                <div class="copy-right">
+                  Ⓒ2020 ROOM SEARCH PVT LTD
+                </div> 
+                  
+                  <div class="row">
+                      <div class="column">
+                          <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" style="width: 22px; height: 20px;"></a>
+                      </div>
+                      <div class="column">
+                       <a href="https://www.instagram.com/"><img src="assests/images/instagram.png" style="width: 22px; height: 20px;"></a>
                     </div>
                     <div class="column">
-                      <img src="assests/images/instagram.png" style="width: 22px; height: 20px;">
-                  </div>
-                  <div class="column">
-                      <img src="assests/images/twitter.png" style="width: 22px; height: 20px;">
-                  </div>
+                       <a href="https://twitter.com/"><img src="assests/images/twitter.png" style="width: 22px; height: 20px;"></a>
+                    </div>
+                  </div> 
                 </div>
-
-            <div style="clear: both;">
-              Ⓒ2020 ROOM SEARCH PVT LTD
-            </div>
-        </div>
         </div>
         
     </body>
