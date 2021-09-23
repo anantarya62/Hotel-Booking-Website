@@ -50,12 +50,38 @@ a{
       margin: 4% auto 2% auto;
   }
   .customer{
-      margin: 2%;
+      margin: 1%;
   }
   .payment{
-    padding: 1% 2%;
-    border: black 1px solid;
-    border-radius: 5px;
-    margin: 2%;
+    background-color:rosybrown;
+    margin:2%; 
+    border: 1px solid black; 
+    padding:1% 2% ; 
+    border-radius: 5px; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+  }
+  .copy-right{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .content{
+    background-color:rgb(132,136,139);
+    width: 50%;
+    height:202.75px;
+    margin:2% auto; 
+    display:flex;
+  }
+  .hotel-card{
+    margin-top: 0;
+  }
+  .adress{
+    margin: 8% 15% 0% 0%;
+  }
+  .contact{
+    float:left;
+    margin: auto 0 auto 1%;
   }
   

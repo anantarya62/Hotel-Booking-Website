@@ -8,6 +8,7 @@
   float: right;
   align-content: center;
   padding: 1.5%;
+  margin-left: 0.5%;
   background-color: rosybrown;
 }
 a{
@@ -28,6 +29,10 @@ a{
 }
 .city-card-and-name-inner{
     position: relative;
+    height: 150px ;
+    width:150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px gray;
   }
   .city-image{
     height: 150px;
@@ -94,11 +99,34 @@ a{
     width: 25%;
   }
   #search-input {
-    border: 1px solid transparent;
+    border: none;
     background-color: #f1f1f1;
     padding: 10px;
     font-size: 16px;
     border-radius: 12px;
     width: 100%;
   }
- 
+  input {
+    border:0;
+    outline:0;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    border-radius: 25%;
+    cursor: pointer;
+  }
+  .city-card-and-name-inner:hover .overlay {
+    opacity: 1;
+  }
+  .overlay span {
+    position:relative;
+    top:45%;
+  }
+  
