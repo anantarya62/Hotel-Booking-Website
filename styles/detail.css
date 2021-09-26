@@ -1,102 +1,21 @@
-.logo{
-  height:60px;
-  width:60px;
-  margin-top: auto;
-  margin-bottom: auto;
+*{
+  font-family: 'Ubuntu',sans-serif;
 }
 
-.column {
-    float: left;
-    padding: 2px;
-  }
 
- .main-container{
-   margin-top: 0;
-    background-color:  #e0e0e0;
-  }
-  *{
-      margin: 0;
-      padding: 0;
-      font-family: 'Ubuntu', sans-serif;
-  }
-
-  .header{   
-    display: flex;
-    background-color: rosybrown;
-    position:fixed;
-    width: 100%;
-    height: 60px;
-    top: 0;
-    justify-content:space-between;
-  }
-  a{
-    text-decoration: none;
-    color: black;
-  }
-  .Footer{
-    display: flex;
-    background-color: rosybrown;
-    bottom: 0%;
-    width: 100%;
-    height:50px;
-    position:fixed;
-    justify-content:space-between;
-    align-items: center;
-  }
-  .hotel{
-      margin: 2% 4% 0% 4%;
-      height: 370px; 
-      width:500px;
-      align-content: center;
-  }
-  #booking-form{
-    height: 400px; 
-    width:25%; 
-    margin-left: 1%;
-    
-  }
-  .description{
-      margin: 1% 4% 2% 4%;
-  }
-  #list{
-    margin-left: 3%;
+.checked{
+  color:orange;
 }
-.copy-right{
-  font-size: 10px;
-  text-align: center;
-  margin-top: 10px;
-}
-.contact{
-  float:left;
-  margin: auto 0 auto 1%;
-}
-#login{
-  float: right;
-  align-content: center;
-  padding: 1.5%;
-  background-color: rosybrown;
-}
-.flex-container{
-  margin: 2%;
-  height: 400px;
-  
-  display: flex;
-  border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-
-}
-.container{
-  background-color:  #e0e0e0;
-
-}
-.outer{
-  float:right;
+body{
+  height:100%;
+  width: 100%;
+  margin:0;
+  background-color: #e0e0e0;
 }
 label{
-    display: inline-block;
-    width:35%;
-    
+  display: inline-block;
+  width:35%;
+  
 
 }
 input[type=submit]{
@@ -114,4 +33,37 @@ input[type=number]{
 
 input[type=date]{
   width: 60%;
+}
+
+
+.content{
+  margin: 2%;
+  height: 400px;
+  
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+.header{
+  display: flex;
+  background-color: rosybrown;
+  position:fixed;
+  width: 100%;
+  justify-content:space-between;
+  
+}
+.footer{
+  display: flex;
+  background-color: rosybrown;
+  bottom: 0%;
+  width: 100%;
+  position:fixed;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.logo{
+  height: 20px ;
+  width:22px;
 }

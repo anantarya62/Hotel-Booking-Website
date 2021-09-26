@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles/payment.css">
-        <title>Payment</title>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="main-container">
-            <div class="header">
-                <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
-                <div id="login">
-                  <a  href="login.html">Login</a>
-                </div>       
-               </div> 
-             <br><br><br><br><br>
-             <div class="content">
-                <div class="hotel-card">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    style="max-height: 300px; max-width:270px;"
-                    alt="Radisson Blu Hotel">
+<head>
+    <title>Payment</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/payment.css">
+</head>
+<body>
+    <div>
+                
+        <header id="headerContainer">
+        </header>
+
+
+
+        <section>
+            <br><br><br><br><br>
+            <div class="content">
+                <div style="background-color:rgb(132,136,139); width: 50%; height:20%; margin:2% auto; display:flex ">
+                    <div>
+                        
+                    <img style="max-height: 300px; max-width:270px;"
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+
+                    </div>
+                    <div style="margin: 2%;margin-top: 2%;">
+                        
+                    <h2>Radisson Blu Hotel</h2>
+                    <p>#38 of 1,289 Hotels in New Delhi</p>
+                    <p>National Highway 8,New Delhi 110017 India</p>
+
+                    </div>
+
                 </div>
-                <div class="adress">
-                    <h3>Radisson Blu Hotel</h3><br>
-                    <p>#38 of 1,289 hotels in New Delhi</p><br>
-                    <p>National Highway 8, New Delhi 110017 India</p>
-                </div>
-             </div>
-                <div class="payment">
-                    <div class="customer">
-                        <p><b style="font-family: cursive;">Name:</b> John Doe
-                            <br><br>
-                            <b style="font-family: cursive;">Number of Adults:</b> 2
-                            <br><br>
-                            <b style="font-family: cursive;">Check-in Date:</b> 09-06-2021
-                            <br><br>
-                            <b style="font-family: cursive;">Check-out Date:</b> 14-06-2021
-                        </p>
+
+                
+                <div style="background-color:rosybrown;margin:2%; border: 1px solid black; padding:1% 2% ; border-radius: 5px; display: flex;justify-content:space-around ; align-items: center;">
+                    <div>
+                        
+                        <p><b style="font-family: cursive;">Name:</b> John Doe</p>
+                        <p><b style="font-family: cursive;">Number of Adukts:</b> 2</p>
+                        
+                        <p><b style="font-family: cursive;" >Check-in Date:</b> 06/06/2020</p>
+                        <p><b style="font-family: cursive;">Check-out Date:</b> 08/06/2020</p>
+
+                    </div>
+
+                    <div>
+                        
+                        <p><b style="font-family: cursive;">Tarriff Breakdown:</b> Rs 1000 x 2 Adults x 5 Nights</p>
+                        <p><b style="font-family: cursive;">Total Amount:</b> Rs 10000</p>
+
                     </div>
                     <div>
-                        <p><b style="font-family: cursive;">Tariff Breakdown:</b> Rs 1000 x 2 Adults x 5 Nights</p><br>
-                        <p><b style="font-family: cursive;">Total Amount:</b> Rs 10000</p>
-                    </div>
-                    <a href="payment.html">Pay Now</a>
-                </div>
-            
-            <br><br><br><br><br>
-            <div class="Footer">
-                <div class="contact"><a href="contact.html">Contact Us</a></div>
-                <div class="copy-right">
-                  Ⓒ2020 ROOM SEARCH PVT LTD
-                </div> 
-                  
-                  <div class="row">
-                      <div class="column">
-                          <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" style="width: 22px; height: 20px;"></a>
-                      </div>
-                      <div class="column">
-                       <a href="https://www.instagram.com/"><img src="assests/images/instagram.png" style="width: 22px; height: 20px;"></a>
-                    </div>
-                    <div class="column">
-                       <a href="https://twitter.com/"><img src="assests/images/twitter.png" style="width: 22px; height: 20px;"></a>
-                    </div>
-                  </div> 
-              </div>
+                        <button onclick="pay()" id="m1" class="btn btn-success" disabled>Pay Now</button>
 
-        </div>
-    </body>
+                    </div>
+
+                     
+
+                    
+                
+                    
+                </div>
+                <br><br><br><br><br><br>
+
+                
+                
+            </div>
+        </section>
+
+        <footer id="footerContainer">
+        </footer>
+    </div> 
+    <script src="scripts/common.js"></script>      
+    <script src="scripts/payment.js"></script>  
+</body>
 </html>

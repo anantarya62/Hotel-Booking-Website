@@ -1,111 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles/detail.css">
-        <title>Detail</title>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="main-container">
-          <div class="header">
-            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
-            <div id="login">
-              <a  href="login.html">Login</a>
-            </div>       
-           </div> 
-           <div class="container">
+<html lang="utf-8">
+<head>
+    <title>Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/detail.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div>
+        <header id="headerContainer">
+        </header>
+
+
+        <section>
             <br><br><br><br><br>
-            <div class="flex-container">
-                <div class="hotel">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    alt="Radisson Blu Hotel" style="width:500px; height: 350px;">
-                </div>
-                <div style="border-left: 1px solid black; height: 400px; margin-left: 10%;">
+            <div class="content">
+                <div style="display: flex; justify-content: center; align-items: center;width:75%">
+                    
+                <img style="height: 350px; width:500px; margin-top: 2%; margin-left: 4%; margin-right: 4%;"
+                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
 
                 </div>
-                <div id="booking-form">
-                 <form action="payment.html" method="get" autocomplete="off">
+                <div style="border-left: 1px solid black; height: 400px;">
+
+                </div>
+                
+                <div style= "height: 400px; width:25%; margin-left: 1%;">
+                    
+                <form method="GET" action="payment.html">
+                    
                     <div style="display: flex; flex-direction: column; padding:5%;">
-                        <div class="outer">
-                            <label for="adult">Adults:</label>
-                            <input class="inner" type="number" name="adult" id="adult" value="1" min="1" oninput="updatePrice()" required/>
-                        </div><br>
-                        <div class="outer">
+                        <div  >
+                            <label style="display: inline-block;" for="adult">Adults:</label>
+                            <input id="adult" type="number" min="1" value="1" name="noOfAdults" onchange="call()" onfocus="call()"   required>
+                            
+    
+                        </div>
+                        <br>
+                        <div>
                             <label for="name">Name:</label>
-                            <input class="inner" type="text" name="name" id="name" required/>
-                        </div><br>
-          
-                        <div class="outer">
-                            <label for="fromDate">From Date:</label>
-                            <input class="inner" type="date" name="fromDate" id="fromDate" oninput="updatePrice()" required/>
-                        </div><br>
-          
-                        <div class="outer">
-                            <label for="toDate">To Date:</label>
-                            <input class="inner" type="date" name="toDate" id="toDate" oninput="updatePrice()" required/>
-                        </div><br>
-          
-                        <div class="outer">
-                            <label for="price">Total:</label>
-                            <input class="inner" type="text" name="price" id="price" readonly/>
-                            <input class="inner" type="hidden" id="id" name="id">
-                        </div><br>
-          
+                            <input id="name" type="text" name="name" required>
+    
+                        </div>
+                        <br>
+                        <div >
+                            <label for="date">From Date:</label>
+                            <input id="date" type="date" value="" name="date" onchange="call()" required>
+    
+                        </div>
+                        <br>
+                        <div>
+                            <label for="todate">To Date:</label>
+                            <input id="todate" type="date" value="" name="date" onchange="call()" required>
+                        </div>
+                        <br>
+                        <div >
+                            <label for="total">Total:</label>
+                            <input id="total" type="text" value="0" name="total" readonly>
+                        </div>
+                        <br>
+                        
                         <div style="align-self:center;">
-                            <input type="submit" class="btn btn-outline-success" value="Book Now" id="book-now" style="float: right;"/>
+                            
+                            
+                            <input style=" padding:8%"  type = "submit" value = "Book Now" id="submit" class="btn btn-outline-success">
+                            
+                            
+                        
                         </div>
+                        
+
                     </div>
-                 </form>
-             </div>
+                    
+                </form>
+                </div>
+
+                <br><br><br><br><br>
+                
             </div>
-    
-                 <div class="description">
-                    <h3>Radisson Blu Hotel</h3>
-                    <br>
-                    <p style="font-family: cursive;">RATING</p>
-                    <br>
-                    <p>5 star</p>
-                    <br>
-                    <p style="font-family: cursive;">AMENITIES</p>
-                    <br>
-                    <ul id="list">
-                       <li>Room Service</li>
-                       <li>Restaurants</li>
-                       <li>Business Center</li>
-                       <li>Fitness Center</li>
-                       <li>Pool</li>
-                     </ul>
-                     <br>
-                     <h4 style="font-family: cursive;">Description</h4>
-                     <br>
-                     <p>
-                       Radisson Hotels is an international hotel chain 
-                       headquartered in the United States. A division of the Radisson Hotel Group, 
-                       it operates the brands Radisson Blu, Radisson Red, Radisson Collection, 
-                       Country Inn & Suites, and Park Inn by Radisson among others.
-                     </p>
-                 </div>
-                 <br><br><br>
-                 <div class="Footer">
-                    <div class="contact"><a href="contact.html">Contact Us</a></div>
-                    <div class="copy-right">
-                      Ⓒ2020 ROOM SEARCH PVT LTD
-                    </div> 
-                      
-                      <div class="row">
-                          <div class="column">
-                              <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" style="width: 22px; height: 20px;"></a>
-                          </div>
-                          <div class="column">
-                           <a href="https://www.instagram.com/"><img src="assests/images/instagram.png" style="width: 22px; height: 20px;"></a>
-                        </div>
-                        <div class="column">
-                           <a href="https://twitter.com/"><img src="assests/images/twitter.png" style="width: 22px; height: 20px;"></a>
-                        </div>
-                      </div> 
-                  </div>
-    
-           </div>
-        </div>
-    </body>
+            
+            <div style="  margin-left: 4%; margin-right: 4%; margin-top: 1%; margin-bottom: 2%;">
+                    
+                <h2>Radisson Blu Hotel</h2>
+                <p style="font-family: cursive;  font-weight: bold;">RATING</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p style="font-family: cursive;  font-weight: bold;">AMENITIES</p>
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Business Center</li>
+                    <li>Fitness Center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5 style="font-family: cursive; font-weight: bold;">DESCRIPTION</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores omnis adipisci earum ab id possimus impedit, quam placeat enim minima, laboriosam beatae soluta reiciendis, exercitationem ipsa. Impedit, dicta nobis vero totam vitae nostrum in!</p>
+                
+
+                </div>
+                <br>
+                <br>
+                <br>
+        </section>
+        <footer id="footerContainer">
+        </footer>
+    </div> 
+    <script src="scripts/common.js"></script>  
+    <script src="scripts/detail.js"></script>   
+</body>
 </html>

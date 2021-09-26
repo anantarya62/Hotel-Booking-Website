@@ -1,73 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles/index.css">
-        <title>Index</title>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="main-container">
-          <div class="header">
-            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
-            <div id="login">
-              <a  href="login.html">Login</a>
-            </div>       
-           </div> 
-           <div class="content">
-            <div id="banner">
-              <div id="search-bar">
-                <form>
-                  <input id="search-input" type="text" placeholder="City">
-                </form>
-              </div>
-             </div>
-             <div id="overlay">
-              <div class="city-cards">
-                <div class="city-card-and-name-inner">
-                  <a href="list.html">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" 
-                  alt="Delhi"  class="city-image">
-                  <div class='overlay'><span>Delhi</span></div></a>
-                </div>
-                <div class="city-card-and-name-inner">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" 
-                  alt="Goa"  class="city-image">
-                  <div class='overlay'><span>Goa</span></div>
-                </div>
-                <div class="city-card-and-name-inner">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" 
-                  alt="Hydrabad"  class="city-image">
-                  <div class='overlay'><span>Hydrabad</span></div>
-                </div>
-                <div class="city-card-and-name-inner">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" 
-                    alt="Calcutta"  class="city-image">
-                    <div class='overlay'><span>Calcutta</span></div>
-              </div>
-              </div> 
-             </div>   
-           </div>
-           <div class="center" style="clear: both;">
-            View more >>
-          </div> 
-            <div class="Footer">
-              <div class="contact"><a href="contact.html">Contact Us</a></div>
-              <div class="copy-right">
-                Ⓒ2020 ROOM SEARCH PVT LTD
-              </div> 
-                
-                <div class="row">
-                    <div class="column">
-                        <a href="https://www.facebook.com/"><img src="assests/images/facebook.png" style="width: 22px; height: 20px;"></a>
+<html class="col-mid-12">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <header id="headerContainer">
+        </header>
+
+        <section>
+            <div>
+                <div
+                    style="background-image:url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg); height:380px; background-position: center; background-size:cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center;">
+                    <div>
+                        <input id="search" type="search" placeholder="City" autocomplete="off" name="City" size="50em">
+
                     </div>
-                    <div class="column">
-                     <a href="https://www.instagram.com/"><img src="assests/images/instagram.png" style="width: 22px; height: 20px;"></a>
-                  </div>
-                  <div class="column">
-                     <a href="https://twitter.com/"><img src="assests/images/twitter.png" style="width: 22px; height: 20px;"></a>
-                  </div>
-                </div> 
+
+                </div>
+
+
+
+
+                <div class="section">
+
+                    <div id="section_box">
+                        <a href="list.html"><img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"> </a>
+                        <div id="hide">
+                            <div>Delhi</div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="section_box">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
+                        <div id="hide">
+                            <div>Goa</div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="section_box">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
+                        <div id="hide">Hyderabad</div>
+                    </div>
+
+
+
+
+                    <div id="section_box">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
+                        <div id="hide">Kolkata</div>
+                    </div>
+
+
+
+                </div>
+
+                 <!-- Extra 4 cities -->
+                <div class="section " id="js-function" style="display: none;">
+
+                    <div id="section_box">
+                        <a href="list.html"><img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">
+                        </a>
+                        <div id="hide">
+                            <div>Chennai</div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="section_box">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg">
+                        <div id="hide">
+                            <div>Agra</div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="section_box">
+                        <img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg">
+                        <div id="hide">Jaipur</div>
+                    </div>
+
+
+
+
+                    <div id="section_box">
+                        <img
+                            src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg">
+                        <div id="hide">Bengaluru</div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <br>
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <button onsubmit="return false"  type="button" id="chnge" onclick="hideandshow()" class="btn btn-secondary btn-sm"
+                            style="text-align: center; text-decoration: none; color:white;" href="index.html">View
+                            more
+                    </button>
+
+
+                </div>
+                <div class="space">
+                    <br>
+                    <br>
+                </div>
+
+
+
             </div>
-        </div>
-    </body>
+        </section>
+
+        <footer id="footerContainer">
+        </footer>
+    </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
 </html>
